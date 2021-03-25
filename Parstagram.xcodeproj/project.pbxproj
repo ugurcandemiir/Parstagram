@@ -11,8 +11,8 @@
 		1E15DA8E0CD448F11287AE5C /* Pods_Parstagram_ParstagramUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 869F76EE39C6034E9D6036CA /* Pods_Parstagram_ParstagramUITests.framework */; };
 		4CF4C46C9CC56B2142CFBBA7 /* Pods_Parstagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3445DC8F1BAB68039D0681A /* Pods_Parstagram.framework */; };
 		5A2499F72605789D003E5668 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2499F62605789D003E5668 /* PostCell.swift */; };
+		5A9B6783260C4B650044E4D2 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9B6782260C4B650044E4D2 /* CommentCell.swift */; };
 		5A9D6F5025FFBCB800D775C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9D6F4F25FFBCB800D775C7 /* AppDelegate.swift */; };
-		5A9D6F5225FFBCB800D775C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9D6F5125FFBCB800D775C7 /* SceneDelegate.swift */; };
 		5A9D6F5725FFBCB800D775C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D6F5525FFBCB800D775C7 /* Main.storyboard */; };
 		5A9D6F5925FFBCBA00D775C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D6F5825FFBCBA00D775C7 /* Assets.xcassets */; };
 		5A9D6F5C25FFBCBA00D775C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A9D6F5A25FFBCBA00D775C7 /* LaunchScreen.storyboard */; };
@@ -44,9 +44,9 @@
 		2220BACF82F12CEAB414DB5F /* Pods-Parstagram-ParstagramUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Parstagram-ParstagramUITests.debug.xcconfig"; path = "Target Support Files/Pods-Parstagram-ParstagramUITests/Pods-Parstagram-ParstagramUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		55356DF1486C4EE2F396C234 /* Pods-ParstagramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParstagramTests.release.xcconfig"; path = "Target Support Files/Pods-ParstagramTests/Pods-ParstagramTests.release.xcconfig"; sourceTree = "<group>"; };
 		5A2499F62605789D003E5668 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		5A9B6782260C4B650044E4D2 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		5A9D6F4C25FFBCB800D775C7 /* Parstagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parstagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A9D6F4F25FFBCB800D775C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5A9D6F5125FFBCB800D775C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5A9D6F5625FFBCB800D775C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A9D6F5825FFBCBA00D775C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = /Users/ugurcandemir/Desktop/Swift/Parstagram/Parstagram/Assets.xcassets; sourceTree = "<absolute>"; };
 		5A9D6F5B25FFBCBA00D775C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -123,7 +123,6 @@
 			isa = PBXGroup;
 			children = (
 				5A9D6F4F25FFBCB800D775C7 /* AppDelegate.swift */,
-				5A9D6F5125FFBCB800D775C7 /* SceneDelegate.swift */,
 				5A9D6F5525FFBCB800D775C7 /* Main.storyboard */,
 				5A9D6F5825FFBCBA00D775C7 /* Assets.xcassets */,
 				5A9D6F5A25FFBCBA00D775C7 /* LaunchScreen.storyboard */,
@@ -132,6 +131,7 @@
 				5A9D6FA425FFC0D300D775C7 /* LoginViewController.swift */,
 				5A9D6FA925FFD15C00D775C7 /* CameraViewController.swift */,
 				5A2499F62605789D003E5668 /* PostCell.swift */,
+				5A9B6782260C4B650044E4D2 /* CommentCell.swift */,
 			);
 			path = Parstagram;
 			sourceTree = "<group>";
@@ -419,8 +419,8 @@
 				5A9D6FAA25FFD15C00D775C7 /* CameraViewController.swift in Sources */,
 				5A9D6F5025FFBCB800D775C7 /* AppDelegate.swift in Sources */,
 				5A9D6F9D25FFC0C000D775C7 /* FeedViewController.swift in Sources */,
-				5A9D6F5225FFBCB800D775C7 /* SceneDelegate.swift in Sources */,
 				5A2499F72605789D003E5668 /* PostCell.swift in Sources */,
+				5A9B6783260C4B650044E4D2 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

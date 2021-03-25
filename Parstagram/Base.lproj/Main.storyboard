@@ -11,7 +11,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Parstagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Parstagram" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -146,6 +146,63 @@
                                             <outlet property="photoView" destination="n1B-uH-3Mi" id="AJM-jr-EsL"/>
                                             <outlet property="userNameLabel" destination="o1W-GS-dLE" id="rFc-3o-kKR"/>
                                         </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" rowHeight="43" id="OfD-pd-9zT" customClass="CommentCell" customModule="Parstagram" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="506" width="428" height="43"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="OfD-pd-9zT" id="uCZ-wG-NDW">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Brittney" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ize-cF-Vit">
+                                                    <rect key="frame" x="15" y="0.0" width="103" height="28"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="This is a comment" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNV-a8-QwL">
+                                                    <rect key="frame" x="96" y="0.0" width="182" height="28"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="xNV-a8-QwL" firstAttribute="top" secondItem="uCZ-wG-NDW" secondAttribute="top" constant="8" id="7Xm-b3-NzJ"/>
+                                                <constraint firstItem="xNV-a8-QwL" firstAttribute="leading" secondItem="Ize-cF-Vit" secondAttribute="trailing" constant="8" id="8f9-gL-FeB"/>
+                                                <constraint firstItem="Ize-cF-Vit" firstAttribute="leading" secondItem="uCZ-wG-NDW" secondAttribute="leading" constant="16" id="Hh4-vY-jKJ"/>
+                                                <constraint firstItem="Ize-cF-Vit" firstAttribute="top" secondItem="uCZ-wG-NDW" secondAttribute="top" constant="8" id="P6h-hq-VE1"/>
+                                                <constraint firstAttribute="trailing" secondItem="xNV-a8-QwL" secondAttribute="trailing" constant="8" id="VVW-Te-AHj"/>
+                                                <constraint firstAttribute="bottom" secondItem="xNV-a8-QwL" secondAttribute="bottom" constant="8" id="ZRh-0t-WJC"/>
+                                                <constraint firstItem="Ize-cF-Vit" firstAttribute="leading" secondItem="uCZ-wG-NDW" secondAttribute="leading" constant="16" id="vLR-T9-yZ8"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ize-cF-Vit" secondAttribute="bottom" constant="8" id="viQ-A8-cZu"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="commentLabel" destination="xNV-a8-QwL" id="bfI-f7-nfz"/>
+                                            <outlet property="nameLabel" destination="Ize-cF-Vit" id="bUm-w1-Nq3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddCommentCell" id="GeK-jr-G0P">
+                                        <rect key="frame" x="0.0" y="549" width="428" height="37"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GeK-jr-G0P" id="UWA-RR-cii">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="37"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add comment..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWZ-dD-ISi">
+                                                    <rect key="frame" x="16" y="8" width="404" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.41627048049999998" green="0.83968183289999998" blue="0.41578396070000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="nWZ-dD-ISi" firstAttribute="leading" secondItem="UWA-RR-cii" secondAttribute="leading" constant="16" id="6Ni-U3-EvJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="nWZ-dD-ISi" secondAttribute="bottom" constant="8" id="GFU-hp-Tzr"/>
+                                                <constraint firstItem="nWZ-dD-ISi" firstAttribute="top" secondItem="UWA-RR-cii" secondAttribute="top" constant="8" id="Heq-DH-RO6"/>
+                                                <constraint firstAttribute="trailing" secondItem="nWZ-dD-ISi" secondAttribute="trailing" constant="8" id="IVQ-Zg-WOv"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
