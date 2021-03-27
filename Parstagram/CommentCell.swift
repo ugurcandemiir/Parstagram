@@ -2,18 +2,18 @@
 //  CommentCell.swift
 //  Parstagram
 //
-//  Created by Ugurcan Demir on 3/25/21.
+//  Created by Mikael Joseph Kaufman on 3/25/21.
 //
+
 import UIKit
 
 class CommentCell: UITableViewCell {
-@IBOutlet weak var nameLabel: UILabel!
-@IBOutlet weak var commentLabel: UILabel!
+
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var commentLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        
         // Initialization code
     }
 
@@ -24,4 +24,3 @@ class CommentCell: UITableViewCell {
     }
 
 }
-

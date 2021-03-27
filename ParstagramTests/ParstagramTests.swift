@@ -2,7 +2,7 @@
 //  ParstagramTests.swift
 //  ParstagramTests
 //
-//  Created by Ugurcan Demir on 3/15/21.
+//  Created by Mikael Joseph Kaufman on 3/17/21.
 //
 
 import XCTest

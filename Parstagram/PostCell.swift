@@ -2,7 +2,7 @@
 //  PostCell.swift
 //  Parstagram
 //
-//  Created by Ugurcan Demir on 3/19/21.
+//  Created by Mikael Joseph Kaufman on 3/18/21.
 //
 
 import UIKit
@@ -10,7 +10,7 @@ import UIKit
 class PostCell: UITableViewCell {
 
     @IBOutlet weak var photoView: UIImageView!
-    @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
